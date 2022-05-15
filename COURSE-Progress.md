@@ -2,29 +2,31 @@
 
 ----------
 
-__Current reading__ = Section 6:course#95
+__Current Reading__ 
+- Section 8:course#106 - Listened & practiced
+- Section 9:course no#123 - Listening only
 
 ------------------
 
-1. Basic Node JS understanding
+1. **Basic Node JS understanding**
     1. Run node.js after install
     2. Run http server on port 3000
     3. Create different routes and action with basic http module.
 
-2. Section 4: Improved Development Workflow and Debugging
+2. **Section 4: Improved Development Workflow and Debugging**
     1. npm init
     2. start server with __'npm run <script-name>'__ command
     3. nodemon development dependency installation
          1. npm install nodemon --save-dev
          2. local dependencies will be available for project only, where it is installed.
     
-3. Section 5: Working with Express.js
+3. **Section 5: Working with Express.js**
     1. Express.js is middleware
     2. npm install --save express
     3. body-parser - to parse body for express app - 3rd party module
     4. path - to access html files for express app - core module
    
-4. Available templating engine
+4. **Available templating engine**
       1. Pug (JADE)
       2. Handlebars
          1. npm install --save express-handlebars@3.0
@@ -49,7 +51,7 @@ __Current reading__ = Section 6:course#95
         1. Pug Docs: https://pugjs.org/api/getting-started.html            
         2. Handlebars Docs: https://handlebarsjs.com/            
         3. EJS Docs: http://ejs.co/#docs
-5. Section 7: The Model View Controller (MVC)
+5. **Section 7: The Model View Controller (MVC)**
     1. What is MVC - Separation of concerns 
        1. __Model__ : 
             1. Represents your data
@@ -60,4 +62,8 @@ __Current reading__ = Section 6:course#95
         3. __Controllers__ : 
             1. Connecting your model and views
     2. 
-    
+ 
+
+--------------------
+# Additional Resources
+- AngularJS tutorial for beginners with NodeJS ExpressJS and MongoDBs https://adrianmejia.com/angularjs-tutorial-for-beginners-with-nodejs-expressjs-and-mongodb/
