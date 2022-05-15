@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ pageTitle }}</title>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <h1>My items</h1>
+           <a href="/add-product">Add Product</a>
+              
+        {{#if hasProducts}}  
+            <ul>
+                {{#each prods}}
+                    <li>
+                        Product name is <b>{{this.title}}</b>
+                    </li>
+                {{/each}}
+            </ul>
+            
+        {{else}}
+                <h1>Product not found</h1>            
+        {{/if}}
+
+    </body>
+    </html>

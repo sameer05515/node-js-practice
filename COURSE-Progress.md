@@ -2,7 +2,7 @@
 
 ----------
 
-__Current reading__ = Section 5:course#71
+__Current reading__ = Section 6:course#82
 
 ------------------
 
@@ -21,4 +21,23 @@ __Current reading__ = Section 5:course#71
 3. Section 5: Working with Express.js
     1. Express.js is middleware
     2. npm install --save express
-    3. 
+    3. body-parser - to parse body for express app - 3rd party module
+    4. path - to access html files for express app - core module
+   
+4. Avaiable templating engine
+      1. EJS
+      2. Pug (JADE)
+      3. Handlebars
+         1. npm install --save express-handlebars@3.0
+         2. ```
+            const { engine } 
+                = require ('express-handlebars');
+            const app = express();
+                app.engine('hbs', engine({
+                extname: "hbs",
+                defaultLayout: false,
+                layoutsDir: "views/layouts/"
+                }));
+            app.set('view engine', 'handlebars');
+            ```
+         3.             
