@@ -1,0 +1,30 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+
+<body>
+    <%- include('../includes/navigation.ejs') %>
+
+    <main>
+        <form class="product-form" action="/words/<% if (editing) { %>edit-word<% } else { %>add-word<% } %>" method="POST">
+            <div class="form-control">
+                <label for="word">Word</label>
+                <input type="text" name="word" id="word" value="<% if (editing) { %><%= product.word %><% } %>">
+            </div>
+            <div class="form-control">
+                <label for="partOfSpeeches">Parts of Speech</label>
+                <input type="text" name="partOfSpeeches" id="partOfSpeeches" value="<% if (editing) { %><%= product.partOfSpeeches %><% } %>">
+            </div>
+            <div class="form-control">
+                <label for="description">Description</label>
+                <textarea name="description" id="description" rows="5"><% if (editing) { %><%= product.description %><% } %></textarea>
+            </div>
+            <% if (editing) { %>
+                <input type="hidden" value="<%= product._id %>" name="wordId">
+            <% } %>
+
+            <button class="btn" type="submit"><% if (editing) { %>Update Product<% } else { %>Add Product<% } %></button>
+        </form>
+    </main>
+<%- include('../includes/end.ejs') %>
