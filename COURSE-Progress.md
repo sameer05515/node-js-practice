@@ -4,7 +4,7 @@
 
 __Current Reading__ 
 - Section 8:course#106 - Listened & practiced
-- Section 9:course no#123 - Listening only
+- Section 9:course no#183 - Listening only
 
 ------------------
 
@@ -62,7 +62,8 @@ __Current Reading__
         3. __Controllers__ : 
             1. Connecting your model and views
     2. 
- 
+ 6. **Sequalize**
+    1. Sequelize Official Docs: http://docs.sequelizejs.com/
 
 --------------------
 # Additional Resources
