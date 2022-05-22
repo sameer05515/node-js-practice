@@ -1,4 +1,12 @@
 <%- include('../includes/head.ejs') %>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script>
+        function showHtmlContent(data, targetDivId) {
+            var parser = new DOMParser();
+            var doc = parser.parseFromString(data, 'text/html');
+            $(targetDivId).html(doc.body.innerText);
+        }        
+    </script>
     <link rel="stylesheet" href="/css/product.css">
 </head>
 

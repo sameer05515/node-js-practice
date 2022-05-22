@@ -4,7 +4,7 @@
 
 __Current Reading__ 
 - Section 8:course#106 - Listened & practiced
-- Section 9:course no#183 - Listening only
+- Section 13:course no#222 - Listening only
 
 ------------------
 
